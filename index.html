@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <title>Frontend Mentor | 3-column preview card component</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend+Deca:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+    </style>
+    <style>
+      body {
+        background-color: hsl(0, 0%, 95%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 900px;
+        min-height: 100vh;
+      }
+      .box1 {
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 10px 0px 0px 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 300px;
+        height: 500px;
+      }
+      .box2 {
+        background-color: hsl(184, 100%, 22%);
+        border-radius: 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 300px;
+        height: 500px;
+      }
+      .box3 {
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0px 10px 10px 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 300px;
+        height: 500px;
+      }
+      .button {
+        background-color: hsl(0, 0%, 95%);
+        border-radius: 20px;
+        padding: 10px 20px;
+        font-weight: bold;
+        margin-top: 60px;
+        margin-right: 60px;
+        border-color: white;
+        color: white;
+      }
+      .button:hover {
+        opacity: 1;
+        cursor: pointer;
+        background-color: white;
+      }
+      .button1:hover {
+        background-color: hsl(31, 77%, 52%);
+        color: black;
+      }
+      .button2:hover {
+        background-color: hsl(184, 100%, 22%);
+        color: black;
+      }
+      .button3:hover {
+        background-color: hsl(179, 100%, 13%);
+        color: black;
+      }
+      .button1 {
+        color: hsl(31, 77%, 52%);
+      }
+      .button2 {
+        color: hsl(184, 100%, 22%);
+      }
+      .button3 {
+        color: hsl(179, 100%, 13%);
+        margin-top: 80px;
+      }
+      .img {
+        margin-top: 20px;
+        margin-left: -60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">
+        <img
+          class="img"
+          src="./images/icon-sedans.svg"
+          alt="Sedans"
+          width="100px"
+        />
+        <h2
+          class="img"
+          style="color: hsl(0, 0%, 95%); font-family: 'Bebas Neue', sans-serif"
+        >
+          Sedans
+        </h2>
+        <p
+          style="
+            color: hsla(0, 0%, 100%, 0.75);
+            font-family: 'Red Hat Display', sans-serif;
+            margin-top: 40px;
+          "
+        >
+          Choose a sedan for its<br />affordability and excellent<br />
+          fuel economy. Ideal for <br />cruising in the city or on<br />
+          your next road trip.
+        </p>
+        <button class="button button1" style="color: hsl(31, 77%, 52%)">
+          Learn More
+        </button>
+      </div>
+      <div class="box2">
+        <img class="img" src="images/icon-suvs.svg" alt="SUVs" width="100px" />
+        <h2
+          class="img"
+          style="color: hsl(0, 0%, 95%); font-family: 'Bebas Neue', sans-serif"
+        >
+          SUVs
+        </h2>
+        <p
+          style="
+            color: hsla(0, 0%, 100%, 0.75);
+            font-family: 'Red Hat Display', sans-serif;
+            margin-top: 40px;
+          "
+        >
+          Take an SUV for its spacious<br />
+          interior, power, and<br />
+          versatility. Perfect for your<br />
+          next family vacation and<br />
+          off-road adventures.
+        </p>
+        <button class="button button2" style="color: hsl(184, 100%, 22%)">
+          Learn More
+        </button>
+      </div>
+      <div class="box3">
+        <img
+          class="img"
+          src="images/icon-luxury.svg"
+          alt="Luxury"
+          width="100px"
+        />
+        <h2
+          class="img"
+          style="color: hsl(0, 0%, 95%); font-family: 'Bebas Neue', sans-serif"
+        >
+          Luxury
+        </h2>
+        <p
+          style="
+            color: hsla(0, 0%, 100%, 0.75);
+            font-family: 'Red Hat Display', sans-serif;
+            margin-top: 40px;
+          "
+        >
+          Cruise in the best car brands<br />
+          without the bloated prices.<br />
+          Enjoy the enhanced comfort<br />
+          of a luxury rental and arrive in style.
+        </p>
+        <button class="button button3" style="color: hsl(179, 100%, 13%)">
+          Learn More
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
